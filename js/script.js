@@ -85,4 +85,4 @@ function readJSONfile(fileName)
     })
 }
 
-readJSONfile("seeders/data.json");
+readJSONfile("./seeders/data.json");
