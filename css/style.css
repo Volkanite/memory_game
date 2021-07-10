@@ -1,0 +1,38 @@
+.items-layout{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item-card{
+    flex: 0 0 30;
+    position: relative;
+    border: 5px solid #ff9f51;
+    border-radius: 40px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.item-card.flip{
+    transform: rotateY(180deg);
+}
+
+.front-cover, .back-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40px;
+}
+
+.front-cover{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.back-cover{
+    background-color: #ffffff;
+}
